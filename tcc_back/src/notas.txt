@@ -1,0 +1,15 @@
+Subir migrations    ->  npx sequelize db:migrate
+Criar migrations    ->  npx sequelize migration:generate --name user
+Excluir migrations  ->  npx sequelize db:migrate:undo:all
+Criar seed  ->  npx sequelize seed:generate --name demo
+Rodar seed  ->  npx sequelize db:seed:all
+
+LOGIN: OK
+LOGOFF:
+CRIAR CONTA: OK
+CADASTRO PRODUTO: OK
+
+ROTA HEROKU = https://everypets.herokuapp.com/
+ROTA BANCO = everypets.crktwog5xyhr.us-east-1.rds.amazonaws.com
+
+"db-rebuild": "sequelize db:drop && sequelize db:create && sequelize db:migrate && sequelize db:seed:all && npm start"
